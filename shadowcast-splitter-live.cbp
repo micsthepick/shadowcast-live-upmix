@@ -7,3 +7,16 @@ Preset=Default
 [preset Default]
 BuildType=4
 Compiler=1
+TargetOS=1
+Debug=0
+Optimize=0
+cb_FLAGS=
+pvf_FLAGS=-eff
+CFLAGS=
+LFLAGS=
+OutputFile=
+OutputFolder=
+BatchGenerate=
+BatchCompile=
+BatchBuild=
+BatchRun=
