@@ -4,9 +4,13 @@ author: micsthepick
 slider1:0<0,1,1>Swap stereo channels
 slider2:0<0,384000,1>Detected Samplerate (expect 96000)
 
-in_pin:In
+in_pin:In1
+in_pin:In2
 out_pin:OutL
 out_pin:OutR
+
+@init
+slider2 = srate;
 
 @gfx 600 0
 gfx_set(1);
@@ -19,7 +23,7 @@ slider2 = srate;
 
 @sample
 
-new = spl0;
+new = spl0 + spl1;
 
 toggle > 0.5 ? (
   toggle = 0;
