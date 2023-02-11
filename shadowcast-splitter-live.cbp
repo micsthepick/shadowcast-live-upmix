@@ -1,0 +1,9 @@
+[General]
+VCBVer=1.00
+MainProjectFile=shadowcast-splitter-live.pvf
+CreateRC=0
+KillBatch=1
+Preset=Default
+[preset Default]
+BuildType=4
+Compiler=1
