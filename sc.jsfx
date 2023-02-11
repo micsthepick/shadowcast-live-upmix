@@ -1,14 +1,20 @@
 desc: Shadowcast Mono-stereo decoder
 author: micsthepick
 
-slider1:0<0,1,1{Off, On}>Swap stereo channels
-slider2:0<0,96000,0>Detected Samplerate (expect 96000)
+slider1:0<0,1,1>Swap stereo channels
+slider2:0<0,384000,1>Detected Samplerate (expect 96000)
 
-in_pin:
-out_pin:
-out_pin:
+in_pin:In
+out_pin:OutL
+out_pin:OutR
+
+@gfx 600 0
+gfx_set(1);
 
 @block
+slider2 = srate;
+
+@slider
 slider2 = srate;
 
 @sample
